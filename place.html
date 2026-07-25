@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diane Chambi">
+    <meta name="description" content="Information about La Paz, Bolivia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Paz | WDD131</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>La Paz, Bolivia</h1>
+    </header>
+
+    <main>
+
+        <div class="hero">
+
+            <picture>
+
+                <source media="(min-width:768px)"
+                srcset="images/la-paz-large.webp">
+
+                <img src="images/la-paz-small.webp"
+                alt="City of La Paz">
+
+            </picture>
+
+            <section class="card data">
+
+                <h2>Data</h2>
+
+                <p><strong>Country:</strong> Bolivia</p>
+
+                <p><strong>Elevation:</strong> 3,640 m</p>
+
+                <p><strong>Population:</strong> 816,000</p>
+
+                <p><strong>Department:</strong> La Paz</p>
+
+                <p><strong>Languages:</strong> Spanish, Aymara</p>
+
+                <p><strong>Time Zone:</strong> UTC -4</p>
+
+                <p><strong>Currency:</strong> Boliviano</p>
+
+            </section>
+
+            <section class="card weather">
+
+                <h2>Weather</h2>
+
+                <img src="images/weather.svg"
+                alt="Weather Icon"
+                class="weather-icon">
+
+                <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+
+                <p><strong>Conditions:</strong> Sunny, Cloudy</p>
+
+                <p><strong>Wind:</strong> <span id="speed">15</span> km/h</p>
+
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+        © <span id="currentyear"></span> Diane Steffy Chambi Gutierrez | Bolivia
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

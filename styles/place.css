@@ -1,0 +1,100 @@
+:root{
+
+    --green:#2E7D32;
+    --green-dark:#1B5E20;
+    --light:#ffffff;
+    --shadow:rgba(0,0,0,.35);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#e8f5e9;
+
+}
+
+header{
+
+    background:var(--green);
+    color:white;
+    text-align:center;
+    padding:1rem;
+
+}
+
+header h1{
+
+    font-size:2rem;
+
+}
+
+.hero{
+
+    position:relative;
+
+}
+
+.hero img{
+
+    width:100%;
+    display:block;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(6px);
+    padding:1.2rem;
+    margin:1rem;
+    border-radius:10px;
+    box-shadow:0 5px 15px var(--shadow);
+
+}
+
+.card h2{
+
+    color:var(--green-dark);
+    margin-bottom:1rem;
+    text-align:center;
+
+}
+
+.card p{
+
+    margin:.5rem 0;
+
+}
+
+.weather-icon {
+
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 15px;
+    
+}
+
+footer{
+
+    background:var(--green);
+    color:white;
+    text-align:center;
+    padding:1rem;
+
+}
+
+footer p{
+
+    margin:.3rem;
+
+}
