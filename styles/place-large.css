@@ -24,10 +24,8 @@
 
 }
 
-.weather-icon{
-
-    display:none;
-
+.weather img {
+    display: none;
 }
 
 .weather h2::after{
