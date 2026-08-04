@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1250" width="100%" height="100%" style="background-color: #ffffff; font-family: sans-serif;">
+  <style>
+    .box { fill: #ffffff; stroke: #1f2937; stroke-width: 2; stroke-dasharray: 1000; }
+    .header-box { fill: #f8fafc; stroke: #1f2937; stroke-width: 2; }
+    .nav-bar { fill: #2563eb; }
+    .nav-text { fill: #ffffff; font-size: 13px; font-weight: bold; }
+    .title-text { fill: #1f2937; font-weight: bold; font-size: 16px; }
+    .btn { fill: #2563eb; rx: 6px; }
+    .btn-text { fill: #ffffff; font-weight: bold; font-size: 14px; }
+    .card { fill: #ffffff; stroke: #1f2937; stroke-width: 1.5; rx: 8px; }
+    .grid-bg { fill: none; stroke: #e2e8f0; stroke-width: 1; }
+  </style>
+
+  <!-- Malla de papel milimetrado de fondo -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- MARCO PRINCIPAL DESKTOP -->
+  <rect x="20" y="20" width="760" height="1210" fill="none" stroke="#64748b" stroke-width="2"/>
+
+  <!-- HEADER -->
+  <g id="header">
+    <rect x="40" y="40" width="720" height="110" class="header-box"/>
+    <text x="60" y="70" class="title-text" font-size="18">🧭 Career Compass</text>
+    <rect x="250" y="50" width="300" height="30" fill="none" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="400" y="70" text-anchor="middle" class="title-text">Site Title &amp; Slogan</text>
+    <text x="400" y="90" text-anchor="middle" fill="#475569" font-size="12">"Career Compass: Plan. Learn. Grow."</text>
+    
+    <!-- MENU AZUL EN HEADER -->
+    <rect x="40" y="110" width="720" height="35" class="nav-bar"/>
+    <text x="110" y="132" text-anchor="middle" class="nav-text">Study Tips</text>
+    <text x="280" y="132" text-anchor="middle" class="nav-text">Dynamic Career Cards</text>
+    <text x="480" y="132" text-anchor="middle" class="nav-text">LocalStorage Save Progress</text>
+    <text x="660" y="132" text-anchor="middle" class="nav-text">Learning Resources</text>
+  </g>
+
+  <!-- 1. HERO SECTION -->
+  <g id="hero" transform="translate(0, 160)">
+    <rect x="40" y="0" width="720" height="260" class="card"/>
+    <!-- X placeholder -->
+    <line x1="40" y1="0" x2="760" y2="260" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="760" y1="0" x2="40" y2="260" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="400" y="110" text-anchor="middle" class="title-text" font-size="16">Large Career Explorer Hero Image</text>
+    <text x="400" y="130" text-anchor="middle" fill="#64748b" font-size="14">(Compass &amp; Students)</text>
+    
+    <!-- BOTON CTA -->
+    <rect x="330" y="180" width="140" height="40" class="btn"/>
+    <text x="400" y="205" text-anchor="middle" class="btn-text">Comenzar CTA</text>
+  </g>
+
+  <!-- 2. CAREERS CARD SECTION (ARRIBA) -->
+  <g id="careers" transform="translate(0, 440)">
+    <rect x="40" y="0" width="720" height="330" class="card" fill="#f8fafc"/>
+    <text x="400" y="35" text-anchor="middle" class="title-text" font-size="18">Careers Card &amp; Search Box</text>
+    
+    <!-- Input Búsqueda -->
+    <rect x="70" y="50" width="660" height="35" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="85" y="72" fill="#94a3b8" font-size="14">Search Careers Input...</text>
+    
+    <!-- Tarjeta 1 -->
+    <rect x="70" y="100" width="660" height="60" class="card"/>
+    <rect x="80" y="108" width="44" height="44" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="80" y1="108" x2="124" y2="152" stroke="#cbd5e1"/>
+    <line x1="124" y1="108" x2="80" y2="152" stroke="#cbd5e1"/>
+    <text x="140" y="128" class="title-text">Web Developer</text>
+    <text x="140" y="148" fill="#475569" font-size="12">Descriptive info and Web Developer | Salary: $20.0 - $10K</text>
+    
+    <!-- Tarjeta 2 -->
+    <rect x="70" y="170" width="660" height="60" class="card"/>
+    <rect x="80" y="178" width="44" height="44" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="80" y1="178" x2="124" y2="222" stroke="#cbd5e1"/>
+    <line x1="124" y1="178" x2="80" y2="222" stroke="#cbd5e1"/>
+    <text x="140" y="198" class="title-text">Graphic Designer</text>
+    <text x="140" y="218" fill="#475569" font-size="12">Descriptive info and Graphic Designer</text>
+
+    <!-- Tarjeta 3 -->
+    <rect x="70" y="240" width="660" height="60" class="card"/>
+    <rect x="80" y="248" width="44" height="44" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="80" y1="248" x2="124" y2="292" stroke="#cbd5e1"/>
+    <line x1="124" y1="248" x2="80" y2="292" stroke="#cbd5e1"/>
+    <text x="140" y="268" class="title-text">Data Analyst</text>
+    <text x="140" y="288" fill="#475569" font-size="12">Data Analyst and data analyst skills</text>
+  </g>
+
+  <!-- 3. STUDY TASK PLANNER BOX (ABAJO DE CAREERS) -->
+  <g id="planner" transform="translate(0, 790)">
+    <rect x="40" y="0" width="720" height="320" class="card" fill="#f8fafc"/>
+    <text x="400" y="35" text-anchor="middle" class="title-text" font-size="18">Study Task Planner Box</text>
+    
+    <!-- Icono Check -->
+    <rect x="385" y="45" width="30" height="30" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <path d="M 390 60 L 398 68 L 410 52" fill="none" stroke="#1f2937" stroke-width="3"/>
+
+    <!-- Input Add Task -->
+    <text x="70" y="100" class="title-text" font-size="14">Add New Study Task</text>
+    <rect x="70" y="110" width="550" height="35" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="630" y="110" width="100" height="35" class="btn"/>
+    <text x="680" y="132" text-anchor="middle" class="btn-text">Add</text>
+
+    <!-- Tareas -->
+    <rect x="70" y="165" width="20" height="20" rx="3" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <path d="M 72 175 L 78 181 L 88 168" fill="none" stroke="#22c55e" stroke-width="3"/>
+    <text x="100" y="180" class="title-text" font-size="14">Complete HTML assignment</text>
+
+    <rect x="70" y="200" width="20" height="20" rx="3" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="100" y="215" class="title-text" font-size="14" fill="#64748b">Research career skills</text>
+
+    <!-- Barra de Progreso -->
+    <text x="70" y="255" class="title-text" font-size="14">Progress</text>
+    <rect x="70" y="265" width="660" height="20" rx="10" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="70" y="265" width="420" height="20" rx="10" fill="#22c55e"/>
+  </g>
+
+  <!-- FOOTER -->
+  <g id="footer" transform="translate(0, 1130)">
+    <rect x="40" y="0" width="720" height="80" fill="#ffffff"/>
+    <line x1="40" y1="0" x2="760" y2="0" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="400" y="35" text-anchor="middle" fill="#475569" font-size="13">© 2023 Career Compass | ✉️ Contact Us</text>
+    <text x="400" y="55" text-anchor="middle" fill="#94a3b8" font-size="12">Last Modified: 2023-11-20</text>
+  </g>
+</svg>
