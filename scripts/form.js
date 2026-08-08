@@ -54,7 +54,7 @@ ratingInputs.forEach((input, index) => {
             if (starIndex <= index) {
                 star.style.color = "#800020";
             } else {
-                star.style.color = "#aaa";
+                star.style.color = "#555";
             }
         });
     });
