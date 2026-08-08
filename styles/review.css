@@ -1,0 +1,197 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --burgundy: #800020;
+    --burgundy-dark: #5c0015;
+    --burgundy-light: #f4e5e9;
+    --burgundy-soft: #ead0d6;
+    --background: #faf8f8;
+    --white: #ffffff;
+    --text: #252525;
+    --border: #b9a4aa;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+/* Header */
+
+header {
+    background-color: var(--burgundy);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Main */
+
+main {
+    width: 92%;
+    max-width: 650px;
+    margin: 2rem auto;
+}
+
+/* Confirmation card */
+
+.confirmation-card {
+    padding: 1.5rem;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-card h2 {
+    margin-top: 0;
+    color: var(--burgundy-dark);
+    font-size: 2rem;
+}
+
+/* Success icon */
+
+.success-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: var(--burgundy-light);
+    color: var(--burgundy);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Review summary */
+
+.review-summary {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    background-color: var(--background);
+    border-left: 5px solid var(--burgundy);
+    border-radius: 6px;
+    text-align: left;
+}
+
+.review-summary h3 {
+    margin-top: 0;
+    color: var(--burgundy-dark);
+}
+
+.review-summary p {
+    margin: 0.8rem 0;
+    overflow-wrap: anywhere;
+}
+
+.review-summary strong {
+    color: var(--burgundy-dark);
+}
+
+/* Rating */
+
+#reviewRating {
+    color: var(--burgundy);
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+/* Review counter */
+
+.counter {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: var(--burgundy-light);
+    border-radius: 8px;
+}
+
+.counter p {
+    margin: 0;
+}
+
+#reviewCount {
+    color: var(--burgundy-dark);
+    font-size: 1.4rem;
+}
+
+/* Back button */
+
+.back-button {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border-radius: 7px;
+    background-color: var(--burgundy);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: var(--burgundy-dark);
+}
+
+.back-button:focus-visible {
+    outline: 3px solid var(--burgundy-soft);
+    outline-offset: 2px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--burgundy-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    main {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .confirmation-card {
+        padding: 2.5rem;
+    }
+
+    .success-icon {
+        width: 75px;
+        height: 75px;
+        font-size: 2.3rem;
+    }
+
+    .confirmation-card h2 {
+        font-size: 2.3rem;
+    }
+}

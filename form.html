@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Product review form for WDD 131">
+    <meta name="author" content="Diane Steffy Chambi Gutierrez">
+
+    <title>Product Review Form | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+
+            <h2>Share Your Experience</h2>
+
+            <p class="intro">
+                Please complete the form below to share your experience with a product.
+            </p>
+
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="product">
+                    Product Name <span class="required">*</span>
+                </label>
+
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>
+                        Select a Product ...
+                    </option>
+                </select>
+                <small>Required</small>
+            </div>
+
+            <!-- Overall Rating -->
+            <fieldset class="rating">
+                <legend>
+                    Overall Rating <span class="required">*</span>
+                </legend>
+
+                <div class="rating-container">
+                    <span class="rating-label">1 star</span>
+
+                    <div class="star-rating">
+                        <label>
+                            <input type="radio" name="rating" value="1" required>
+                            <span>★</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="rating" value="2">
+                            <span>★</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="rating" value="3">
+                            <span>★</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="rating" value="4">
+                            <span>★</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="rating" value="5">
+                            <span>★</span>
+                        </label>
+                    </div>
+
+                    <span class="rating-label">5 stars</span>
+                </div>
+
+                <small>Required</small>
+            </fieldset>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful? <span class="optional">(Optional)</span></legend>
+
+                <div class="checkbox-group">
+
+                    <label for="feature1">
+                        <input
+                            type="checkbox"
+                            id="feature1"
+                            name="features"
+                            value="Easy to use"
+                        >
+                        Easy to use
+                    </label>
+
+                    <label for="feature2">
+                        <input
+                            type="checkbox"
+                            id="feature2"
+                            name="features"
+                            value="Durability"
+                        >
+                        Durability
+                    </label>
+
+                    <label for="feature3">
+                        <input
+                            type="checkbox"
+                            id="feature3"
+                            name="features"
+                            value="Performance"
+                        >
+                        Performance
+                    </label>
+
+                    <label for="feature4">
+                        <input
+                            type="checkbox"
+                            id="feature4"
+                            name="features"
+                            value="Design"
+                        >
+                        Design
+                    </label>
+
+                </div>
+            </fieldset>
+
+            <!-- Written Review -->
+            <div class="form-group">
+                <label for="review">
+                    Written Review <span class="optional">(Optional)</span>
+                </label>
+
+                <textarea
+                    id="review"
+                    name="review"
+                    rows="6"
+                    placeholder="Write your review here..."
+                ></textarea>
+            </div>
+
+            <!-- User Name -->
+            <div class="form-group">
+                <label for="username">
+                    Your Name <span class="optional">(Optional)</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    autocomplete="name"
+                    placeholder="Enter your name"
+                >
+            </div>
+
+            <!-- Submit -->
+            <input
+                type="submit"
+                value="Send Review"
+                class="submit-button"
+            >
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Diane Steffy Chambi Gutierrez
+        </p>
+
+        <p>
+            Santa Cruz, Bolivia
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Product review confirmation page">
+    <meta name="author" content="Diane Steffy Chambi Gutierrez">
+
+    <title>Review Submitted | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="confirmation">
+
+        <section class="confirmation-card">
+
+            <div class="success-icon" aria-hidden="true">
+                ✓
+            </div>
+
+            <h2>Thank You!</h2>
+
+            <p>
+                Your product review has been successfully submitted.
+            </p>
+
+            <div class="review-summary">
+                <h3>Your Review</h3>
+
+                <p>
+                    <strong>Product:</strong>
+                    <span id="reviewProduct"></span>
+                </p>
+
+                <p>
+                    <strong>Rating:</strong>
+                    <span id="reviewRating"></span>
+                </p>
+
+                <p>
+                    <strong>Installation Date:</strong>
+                    <span id="reviewDate"></span>
+                </p>
+
+                <p>
+                    <strong>Features:</strong>
+                    <span id="reviewFeatures"></span>
+                </p>
+
+                <p>
+                    <strong>Review:</strong>
+                    <span id="reviewText"></span>
+                </p>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="reviewName"></span>
+                </p>
+            </div>
+
+            <div class="counter">
+                <p>
+                    You have completed
+                    <strong id="reviewCount">0</strong>
+                    review(s).
+                </p>
+            </div>
+
+            <a href="form.html" class="back-button">
+                Write Another Review
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Diane Steffy Chambi Gutierrez
+        </p>
+
+        <p>
+            Santa Cruz, Bolivia
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
